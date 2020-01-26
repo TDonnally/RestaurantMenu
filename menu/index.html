@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+        <title>Restooraunt</title>
+        <link rel="stylesheet" type="text/css" href="/menu/styles/menu.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Prata&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div id = "overlay">
+            <div id = "menuFood">
+                <a class = "scrollButtons" style="position: fixed;" onclick="closeMenu()">X</a>
+                <div class = "menuCategories">
+                    <h2>Appetizers</h2>
+                    <div class = "item">
+                        <h4>1. Rosemary and chilli parcels</h4>
+                        <p>Thin filo pastry cases stuffed with dried rosemary and red chilli</p>
+                    </div>
+                    <div class = "item">
+                        <h4>2. Prawn and parmesan soup</h4>
+                        <p>King prawns and parmesan combined into creamy soup</p>
+                    </div>
+                    <div class = "item">
+                        <h4>3. Spinach and nectarine gyoza</h4>
+                        <p>Thin pastry cases stuffed with baby spinach and fresh nectarine</p>
+                    </div>
+                    <div class = "item">
+                        <h4>4. Pigeon and squash dumplings</h4>
+                        <p>Thin pastry cases stuffed with pigeon and acorn squash</p>
+                    </div>
+                </div>
+                <div class = "menuCategories">
+                    <h2>Entrees</h2>
+                    <div class = "item">
+                        <h4>1. Bison salad with garlic dressing</h4>
+                        <p>A mouth-watering bison salad served with garlic dressing</p>
+                    </div>
+                    <div class = "item">
+                        <h4>2. Beef and pepper madras</h4>
+                        <p>Medium-hot madras made with beef and sweet pepper</p>
+                    </div>
+                    <div class = "item">
+                        <h4>3. Chickpea and parmesan panini</h4>
+                        <p>A hot, pressed panini filled with fresh chickpea and parmesan</p>
+                    </div>
+                    <div class = "item">
+                        <h4>4. Lamb and chilli skewers</h4>
+                        <p>Bamboo skewers loaded with minced lamb and dried chilli</p>
+                    </div>
+                </div>
+                <div class = "menuCategories">
+                    <h2>Desserts</h2>
+                    <div class = "item">
+                        <h4>1. Polenta and chocolate cake</h4>
+                        <p>Rich cake made with polenta and plain chocolate</p>
+                    </div>
+                    <div class = "item">
+                        <h4>2. Milk chocolate and ginger cheesecake</h4>
+                        <p>A rich cheesecake layered with milk chocolate and hot ginger</p>
+                    </div>
+                </div>
+            </div>
+            <div id = "scrollActive">
+                <a id = "scrollButton" onclick="onClick('menuScroll')"><img  id= "scrollIcon" src = "/menu/images/menuIcon.png"/></a>
+            </div>
+            <div id = "title">
+                <h1 style = "font-weight: bold;">Flame la Flame</h1>
+                <br>
+                <h3>Local</h3><img class="dot" src = "Dot.png"/><h3>Gourmet</h3><img class="dot" src = "/menu/images/Dot.png"/><h3 style="color: #98FF8F">Organic</h3>
+            </div>
+            <div class = slides id = "menuScroll">
+                <a style = "float: right"class = "scrollButtons" onclick="onClose('menuScroll')">X</a><br>
+                <div id = "buttons">
+                    <a class = "scrollButtons" onclick="openMenu()">Menu</a><br>
+                    <a class = "scrollButtons" onclick="onClick('about')">About</a><br>
+                    <a class = "scrollButtons" onclick="onClick('contact')">Contact</a><br>
+                </div>
+            </div>
+            <div class = slides id = "about" style="background-color: #DAF8FF; color: black;">
+                <a style = "float: right"class = "scrollButtons" onclick="onClose('about')">X</a><br>
+                <h2>About us</h2>
+                <p>La Flames oldest freestanding restaurant. A local favorite for 83+ years. Featuring our famous DeAngelis spaghetti sauces and our famous Upside Down pizza. Homemade, delicious Italian dishes, featuring seafood, steaks, and pasta. Full pub menu and sandwich selection. Full menu offered all day and late night. Full bar with entertainment on weekends. Home to the stars, cast parties and celebrities from the Hershey Theatre. Conveniently located on Chocolate Avenue, directly across from the Hershey Story Museum.
+                </p>
+                
+                
+            </div>
+            <div class = slides id = "contact" style="background-color: #FFEBED; color: black;">
+                <a style = "float: right"class = "scrollButtons" onclick="onClose('contact')">X</a><br>
+                <div style="position: relative;">
+                    <h4>Address:</h4> <p class="contactInfo">1234 Madeup lane</p><p class="contactInfo">Bangor, ME</p>
+                    <h4>Phone Number:</h4> <p class="contactInfo">(123)456-7890</p>
+                    <h4>Email:</h4> <p class="contactInfo">flamelaflame@flamelaflame.com</p>
+                </div>
+                
+                
+            </div>
+        </div>
+        <script src="/menu/scripts/menu.js"></script>
+    </body>
+</html>

@@ -1,0 +1,146 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    margin: 0%;
+    font-family: 'Prata';
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+    
+}
+a{
+    cursor: pointer;
+}
+#overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding-right: 0%;
+    background-image: url("/menu/images/Food Photo.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+/*
+This is the menu display. It contains all links to food.
+Everything underneath this has to do with the components inside this div.
+*/
+#menuFood{
+    position: absolute;
+    float: top;
+    width:100%;
+    height: 100%;
+    top: -100%;
+    background-color: rgb(244, 255, 244);
+    z-index: 1;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    overflow: auto;
+    white-space: nowrap;
+    color: black;
+}
+.menuCategories{
+    position: relative;
+    text-align: center;
+}
+/*This contains all the text in title and subtitles*/
+#title{
+    position: absolute;
+    padding-top: none;
+    padding-left: 20px;
+    left: 20%;
+}
+h1,h3,.dot{
+    letter-spacing: 5px;
+    margin-top: 20px;
+    white-space: nowrap;
+    display: inline-block;
+    margin-right: 10px;
+}
+.dot{
+    width: 10px;
+}
+/*
+This is the scroll menu. It moves off screen at init and moves on screen when the div is clicked
+Everything underneath this has to do with the components inside this div.
+*/
+.slides{
+    position: absolute;
+    float: left;
+    width: 33%;
+    height: 100%;
+    background-color: rgb(244, 255, 244);
+    left: -100%;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+#buttons{
+    position: relative;
+    width: 100%;
+    height: 65.275311%;
+    margin-top: 25%;
+    
+    
+}
+.scrollButtons{
+    color: black;
+    font-size: 35px;
+    margin-left: 20%;
+    margin-bottom: 50px;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    
+}
+.scrollButtons:hover{
+    font-size: 40px;
+}
+
+
+/*This controls the menu animation button*/
+#scrollActive{
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    left: 10%;
+    margin-top: 20px;
+}
+#scrollIcon{
+    width: 50px;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+#scrollIcon:hover{
+    width: 60px;
+}
+
+.contactInfo{
+    position: relative;
+    left: 20%;
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+    .slides{
+        width: 100%;
+    }
+    #title{
+        position: absolute;
+        padding-top: none;
+        margin-top: 50px;
+        left: 5%;
+    }
+    h1,h3,.dot{
+        letter-spacing: 2px;
+        
+    }
+    
+ }
